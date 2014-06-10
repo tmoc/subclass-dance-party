@@ -43,5 +43,15 @@ describe("movingDancer", function() {
       expect(movingDancer.top).to.equal(10);
       expect(movingDancer.left).to.equal(20);
     });
+
+    describe("line up", function () {
+      it("should move to the left when line up triggered", function () {
+        expect(movingDancer.left).not.to.equal(100);
+        movingDancer.lineUp();
+        expect(movingDancer.left).to.equal(100);
+      });
+    });
   });
+
+
 });
