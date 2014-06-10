@@ -10,7 +10,7 @@ CarltonDancer.prototype = Object.create(ImageDancer.prototype);
 CarltonDancer.prototype.contructor = CarltonDancer;
 
 CarltonDancer.prototype.pushOtherDancers = function (dancers) {
-  var distance = 300;
+  var distance = 500;
   var isWithinRadius = function (otherDancer, radius) {
     // using pythagorean theorem
     // determine a

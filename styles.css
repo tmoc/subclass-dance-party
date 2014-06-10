@@ -26,6 +26,7 @@ body, a:link, a:visited, a:active{
   border:10px solid red;
   border-radius:10px;
   position:absolute;
+  transition: top 5s, left 4s;
 }
 
 .blueDancer {
@@ -36,4 +37,7 @@ body, a:link, a:visited, a:active{
 
 .imageDancer {
   position:absolute;
+  transition: top 5s, left 4s;
+  -webkit-transform: rotate(-15deg);
+  transform: rotate(-15deg);
 }
