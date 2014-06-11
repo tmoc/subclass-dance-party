@@ -29,15 +29,18 @@ body, a:link, a:visited, a:active{
   transition: top 5s, left 4s;
 }
 
+.flip{
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
 .blueDancer {
-  border:10px solid blue;
   border-radius:10px;
   position:absolute;
 }
 
 .imageDancer {
   position:absolute;
-  transition: top 5s, left 4s;
-  -webkit-transform: rotate(-15deg);
-  transform: rotate(-15deg);
+  transition: top 5s, left 4s, transform 2s;
+  -webkit-transition: -webkit-transform 1s, top 5s, left 4s;
 }

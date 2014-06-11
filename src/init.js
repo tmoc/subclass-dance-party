@@ -32,6 +32,21 @@ $(document).ready(function(){
     $('body').append(dancer.$node);
   });
 
+  $('#background').on('change', function(){
+    var selection = $(this).val();
+    if(selection === 'ceiling'){
+      $(document.body).css('background-image','url(images/ceiling.jpg)');
+      dancers.forEach(function(dancer){
+        dancer.flip();
+      });
+    } else if (selection === 'desert'){
+      $(document.body).css('background-image','url(images/desert.jpg)');
+      dancers.forEach(function(dancer){
+        dancer.flip();
+      });
+    }
+  });
+
   $('#line-up').on('click', function (e) {
     e.preventDefault();
     dancers.forEach(function (dancer) {

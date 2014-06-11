@@ -27,3 +27,7 @@ Dancer.prototype.setPosition = function(top, left){
 Dancer.prototype.lineUp = function () {
   this.setPosition(undefined, 100);
 };
+
+Dancer.prototype.flip = function (){
+  this.$node.toggleClass('flip');
+};
